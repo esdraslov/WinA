@@ -4,5 +4,7 @@ def main():
         line = input(">")
         if line == 'quit()': break
 
+        print(line)
+
 if __name__ == '__main__':
     main()
