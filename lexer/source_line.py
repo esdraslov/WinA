@@ -17,11 +17,11 @@ class sourceLine:
     def ignore(self):
         self.locale[0] = self.locale[1]
 
-    def taken(self):
+    def token(self):
         return self.line[self.locale[0]:self.locale[1]]
 
     def new_locale(self):
-        locale, taken = self.locale.copy(), self.taken()
+        locale, taken = self.locale.copy(), self.token()
         self.locale[0] = self.locale[1]
         return locale, taken
 
